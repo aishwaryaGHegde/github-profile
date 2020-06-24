@@ -10,11 +10,11 @@ function LeftPane() {
     return (
         <div className="leftPane">
             <img src={profileDetails.avatar_url} alt="profile"></img>
-            <div className="name">{profileDetails.name}</div>
-            <div className="id">{profileDetails.login}</div>
-            <div className="bio">{profileDetails.bio}</div>
-            <div className="comp">{profileDetails.company}</div>
-            <div className="loc">{profileDetails.location}</div>
+            <div className="common name">{profileDetails.name}</div>
+            <div className="common id">{profileDetails.login}</div>
+            <div className="common bio">{profileDetails.bio}</div>
+            <div className="common comp">{profileDetails.company}</div>
+            <div className="common loc">{profileDetails.location}</div>
         </div>
     )
 }

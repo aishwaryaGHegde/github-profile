@@ -13,21 +13,26 @@ function RightPane() {
       }, [])
     return (
         <div>
-            <input placeholder="Find a Repository..."></input>
-            <select name='type' value={setOptionsVal}>
+            <input className="searchFilter" placeholder="Find a Repository..."></input>
+            <select name='type' className="typeFilter">
                 {typeFilter.map(filter => {
                 return <option value={filter} key={filter}>{filter}</option>
                 })}
             </select>
-            <select name='lang'>
+            <select name='lang' className="langFilter">
                 {langFilter.map(filter => {
                 return <option value={filter} key={filter}>{filter}</option>
                 })}
             </select>
             {
                 repoDetails.map((repo, index) => {
-                return <div className="repoName" key={index}>{repo.name}</div>
-                })
+                return (
+                    <ul className="repoName" key={index}>
+                        <li>
+                            {repo.name}
+                        </li>
+                    </ul>
+                )})
             }
         </div>
     )

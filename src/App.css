@@ -41,10 +41,50 @@
   top: 0px !important;
   left: 112px;
   width: 280px;
+  font-size: 34px !important;
+  line-height: 1.5;
+  color: #24292e;
+  font-weight: 400 !important;
+}
+
+.common {
+  padding-top: 15px;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 
 .rightPane {
   padding-right: 16px!important;
   padding-left: 16px!important;
   align-items: center;
+}
+
+li {
+  padding-top: 24px!important;
+  padding-bottom: 24px!important;
+  border-bottom: 1px solid #e1e4e8!important;
+  display: flex;
+}
+
+.searchFilter {
+  font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji";
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292e;
+  width: 200px;
+  margin-right: 20px;
+  height: 30px;
+}
+
+.typeFilter {
+  margin-right: 20px;
+  width: 100px;
+  height: 30px;
+}
+
+.langFilter {
+  margin-right: 20px;
+  width: 100px;
+  height: 30px;
 }
